@@ -14,6 +14,10 @@
 	reaction_tags = REACTION_TAG_HARD | REACTION_TAG_DRINK
 
 /datum/chemical_reaction/drink/nuka_cola_dark
-	results = list(/datum/reagent/consumable/nuka_cola_dark)
+	results = list(/datum/reagent/consumable/nuka_cola_dark = 2)
 	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/consumable/ethanol/rum = 1)
 	reaction_tags = REACTION_TAG_DRINK | REACTION_TAG_MODERATE
+
+/datum/chemical_reaction/drink/nuka_cola_quantum
+	results = list(/datum/reagent/consumable/nuka_cola_quantum = 2)
+	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/bluespace = 1)

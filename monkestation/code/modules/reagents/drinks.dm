@@ -29,12 +29,29 @@
 	taste_description = "a hangover"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
+/datum/glass_style/drinking_glass/nuka_cola_dark
+	required_drink_type = /datum/reagent/consumable/nuka_cola_dark
+	name = "glass of Nuka Cola Dark"
+	desc = "Do not operate heavy machinery for 8 hours after drinking."
+	icon = 'monkestation/icons/obj/drinks/soda.dmi'
+	icon_state = "Nuka_cola_dark"
+
+
 /datum/reagent/consumable/nuka_cola_dark/on_mob_life(mob/living/carbon/drinker)
 	. = ..()
-	var/flash_protect = FLASH_PROTECTION_WELDER
 
 /datum/reagent/consumable/nuka_cola_quantum
 	name = "Nuka Cola Quantum"
 	description = "the glow is healthy we promise"
 	color = "#12eccf"
 	quality = DRINK_FANTASTIC
+
+/datum/glass_style/drinking_glass/nuka_cola_quantum
+	required_drink_type = /datum/reagent/consumable/nuka_cola_quantum
+	name = "Glass of Nuka Cola Quantum"
+	desc = "Twice the taste, twice the radiation!"
+	icon = 'monkestation/icons/obj/drinks/soda.dmi'
+	icon_state = ""
+
+/datum/reagent/consumable/nuka_cola_quantum/on_mob_life(mob/living/carbon/drinker)
+	. = ..()
