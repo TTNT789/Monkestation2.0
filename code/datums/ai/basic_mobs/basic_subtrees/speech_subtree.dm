@@ -160,6 +160,16 @@
 	emote_hear = list("snorts.")
 	emote_see = list("sniffs around.")
 
+/datum/ai_planning_subtree/random_speech/pony
+	speech_chance = 3
+	emote_hear = list("whinnies!")
+	emote_see = list("horses around.")
+
+
+/datum/ai_planning_subtree/random_speech/pony/tamed
+	speech_chance = 3
+	emote_see = list("snorts.")
+
 /datum/ai_planning_subtree/random_speech/killer_tomato
 	speech_chance = 3
 	speak = list("gnashes.", "growls lowly.", "snarls.")
@@ -192,6 +202,12 @@
 	speech_chance = 5
 	emote_hear = list("rawrs.","grumbles.","grawls.", "stomps!")
 	emote_see = list("stares ferociously.")
+
+/datum/ai_planning_subtree/random_speech/cats
+	speech_chance = 10
+	sound = list(SFX_CAT_MEOW)
+	emote_hear = list("meows.")
+	emote_see = list("meows.")
 
 /datum/ai_planning_subtree/random_speech/blackboard //literal tower of babel, subtree form
 	speech_chance = 1

@@ -32,9 +32,11 @@
 	icon = initial(icon)
 	invisibility = 0
 	set_species(/datum/species/monkey)
+	name = "monkey"
+	regenerate_icons()
+	set_name()
 	SEND_SIGNAL(src, COMSIG_HUMAN_MONKEYIZE)
 	uncuff()
-	regenerate_icons()
 	return src
 
 //////////////////////////           Humanize               //////////////////////////////
@@ -373,7 +375,7 @@
 		return FALSE //Verbs do not appear for players.
 
 //Good mobs!
-	if(ispath(MP, /mob/living/simple_animal/pet/cat))
+	if(ispath(MP, /mob/living/basic/pet/cat))
 		return TRUE
 	if(ispath(MP, /mob/living/basic/pet/dog/corgi))
 		return TRUE
